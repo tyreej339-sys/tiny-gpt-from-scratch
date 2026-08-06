@@ -22,8 +22,12 @@ def build_stoi(vocab):
     vocab_bu = {vocabs: index for index, vocabs in enumerate(vocab)}
     return vocab_bu
 
-# Step 3 - build_itos (not yet solved)
-# TODO: implement
+# Step 3 - build_itos
+def build_itos(vocab):
+    """Return a dict mapping each index 0..len(vocab)-1 to its character."""
+    # TODO: build an int-to-string lookup from the vocab list
+    go = {index: character for index, character in enumerate(vocab)}
+    return go
 
 # Step 4 - encode_char (not yet solved)
 # TODO: implement
